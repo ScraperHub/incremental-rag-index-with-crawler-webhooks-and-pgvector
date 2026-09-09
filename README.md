@@ -2,8 +2,6 @@
 
 Runnable FastAPI + PostgreSQL 16 / pgvector app for the tutorial **Keep Your RAG Index Fresh: Incremental Re-Indexing with the Crawlbase Crawler, Webhooks, and pgvector**.
 
-The article is **not** duplicated here. Read [`draft/incremental-rag-index-with-crawler-webhooks-and-pgvector.md`](../draft/incremental-rag-index-with-crawler-webhooks-and-pgvector.md) in the parent repo. This README is how to run `final/` and how `steps/` map to that article.
-
 ## Layout
 
 - `final/` — complete app (union of the steps).
