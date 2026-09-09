@@ -1,0 +1,9 @@
+fastapi>=0.110.0
+uvicorn[standard]>=0.27.0
+psycopg[binary,pool]>=3.1.0
+crawlbase>=0.1.0
+openai>=1.40.0
+tiktoken>=0.7.0
+apscheduler>=3.10.0
+python-dotenv>=1.0.0
+httpx>=0.27.0
