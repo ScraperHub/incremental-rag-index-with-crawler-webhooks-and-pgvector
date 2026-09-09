@@ -1,13 +1,8 @@
 # Incremental RAG index (companion code)
 
-<<<<<<< HEAD
 Runnable FastAPI + PostgreSQL 16 / pgvector app for the tutorial **Keep Your RAG Index Fresh: Incremental Re-Indexing with the Crawlbase Crawler, Webhooks, and pgvector**.
 
 The article is **not** duplicated here. Read [`draft/incremental-rag-index-with-crawler-webhooks-and-pgvector.md`](../draft/incremental-rag-index-with-crawler-webhooks-and-pgvector.md) in the parent repo. This README is how to run `final/` and how `steps/` map to that article.
-=======
-Go CAPTCHA-solve pipeline with bounded queue, worker pool, pluggable solvers,
-and metrics. Shows how production architecture reaches 8,000 solves/sec.
->>>>>>> 4bfee9514934a55cd86442d2627d09da2ef85931
 
 ## Layout
 
@@ -64,14 +59,13 @@ https://<your-host>/webhook?token=<WEBHOOK_TOKEN>
 
 `GET /health` should return `{"ok": true}`. Crawlbase monitoring probes (`User-Agent: Crawlbase Monitoring Bot 1.0`) also receive 200.
 
-<<<<<<< HEAD
 ### 5. Seed push
 
 ```bash
 python push.py
 ```
 
-Edits `seeds/urls.txt` first if you want a different corpus. Pushes use `callback=true`, `format=md`, `md_readability=true`.
+Edit `seeds/urls.txt` first if you want a different corpus. Pushes use `callback=true`, `format=md`, `md_readability=true`.
 
 ### 6. Recrawl
 
@@ -120,7 +114,7 @@ This starts Postgres 16 + pgvector, installs deps, and runs pytest. OpenAI and C
 | [`steps/07-query-freshness`](steps/07-query-freshness) | Freshness-aware citations (same as `final/`) |
 
 Each step folder has its own `README.md` (what it adds, how to run, what comes next). Work from `final/` unless you are following the article section by section.
-=======
+
 ---
+
 Copyright 2026 [Crawlbase](https://crawlbase.com/)
->>>>>>> 4bfee9514934a55cd86442d2627d09da2ef85931
